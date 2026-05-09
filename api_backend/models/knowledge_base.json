@@ -1,0 +1,14 @@
+[
+  {
+    "keywords": ["nmap", "port scan"],
+    "answer": "Nmap ek network scanning tool hai jo open ports aur services detect karta hai."
+  },
+  {
+  "keywords": ["ethical hacking roadmap", "hacking roadmap"],
+  "answer": "Ethical hacking roadmap:\n\n1. Networking basics (TCP/IP, DNS)\n2. Linux fundamentals\n3. Web basics (HTTP, HTML, JS)\n4. Web security (OWASP Top 10)\n5. Tools (Nmap, Burp Suite, SQLmap)\n6. Practice (TryHackMe, HackTheBox)\n7. Bug bounty practice\n\nStart with basics → then labs → then real targets (legal)."
+  },
+  {
+    "keywords": ["phishing"],
+    "answer": "Phishing ek attack hai jisme attacker fake website ya email se data churaata hai."
+  }
+]

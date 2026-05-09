@@ -1,0 +1,18 @@
+{
+  "portswigger": {
+    "description": "PortSwigger labs web security practice ke liye best hain.",
+    "steps": [
+      "Input fields identify karo",
+      "Payload test karo",
+      "Response analyze karo"
+    ]
+  },
+  "tryhackme": {
+    "description": "TryHackMe beginners ke liye best platform hai.",
+    "steps": [
+      "Recon se start karo",
+      "Open ports check karo",
+      "Service enumerate karo"
+    ]
+  }
+}

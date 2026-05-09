@@ -1,0 +1,17 @@
+{
+  "nmap": {
+    "description": "Nmap ek network scanning tool hai jo open ports aur services detect karta hai.",
+    "usage": "nmap -sV target",
+    "example": "nmap -A 192.168.1.1"
+  },
+  "sqlmap": {
+    "description": "SQLMap ek automated SQL injection tool hai.",
+    "usage": "sqlmap -u 'url' --dbs",
+    "example": "sqlmap -u http://test.com?id=1 --dbs"
+  },
+  "burp": {
+    "description": "Burp Suite web security testing ke liye use hota hai.",
+    "usage": "Proxy ke through requests intercept karo",
+    "example": "Login request capture karke modify karo"
+  }
+}

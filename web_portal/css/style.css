@@ -1,0 +1,235 @@
+/* ========================================
+   PHISHGUARD ULTRA - CUSTOM STYLES
+   ======================================== */
+
+/* ------------------------------
+   TAB BUTTON STYLES
+   ------------------------------ */
+.tab-btn {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    transition-property: all;
+    transition-duration: 200ms;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #374151;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.dark .tab-btn {
+    color: #d1d5db;
+}
+
+.tab-btn:hover {
+    background-color: #f3f4f6;
+}
+
+.dark .tab-btn:hover {
+    background-color: #1f2937;
+}
+
+.tab-btn.active {
+    background-color: #2563eb;
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.dark .tab-btn.active {
+    background-color: #3b82f6;
+}
+
+/* ------------------------------
+   RESULT CARDS
+   ------------------------------ */
+.result-card {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border-left-width: 4px;
+    transition-property: all;
+    transition-duration: 200ms;
+}
+
+.result-safe {
+    border-left-color: #22c55e;
+    background-color: #f0fdf4;
+}
+
+.dark .result-safe {
+    background-color: rgba(34, 197, 94, 0.15);
+}
+
+.result-phishing {
+    border-left-color: #ef4444;
+    background-color: #fef2f2;
+}
+
+.dark .result-phishing {
+    background-color: rgba(239, 68, 68, 0.15);
+}
+
+.result-suspicious {
+    border-left-color: #eab308;
+    background-color: #fefce8;
+}
+
+.dark .result-suspicious {
+    background-color: rgba(234, 179, 8, 0.15);
+}
+
+.result-error {
+    border-left-color: #6b7280;
+    background-color: #f9fafb;
+}
+
+.dark .result-error {
+    background-color: rgba(107, 114, 128, 0.15);
+}
+
+/* ------------------------------
+   COPY BUTTON
+   ------------------------------ */
+.copy-btn {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    color: #2563eb;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.dark .copy-btn {
+    color: #60a5fa;
+}
+
+.copy-btn:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   LOADER SPINNER
+   ------------------------------ */
+.loader {
+    border: 3px solid #e5e7eb;
+    border-top: 3px solid #3b82f6;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.8s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ------------------------------
+   CHAT MESSAGES
+   ------------------------------ */
+.chat-message-user {
+    background-color: #2563eb;
+    color: white;
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    padding: 0.75rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-bottom: 0.75rem;
+}
+
+.chat-message-bot {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    padding: 0.75rem;
+    max-width: 80%;
+    margin-right: auto;
+    margin-bottom: 0.75rem;
+}
+
+.dark .chat-message-bot {
+    background-color: #374151;
+    color: #f3f4f6;
+}
+
+/* ------------------------------
+   HIDE CLASS
+   ------------------------------ */
+.hidden {
+    display: none;
+}
+
+/* ------------------------------
+   SCROLLBAR STYLING (OPTIONAL)
+   ------------------------------ */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #475569;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* ------------------------------
+   RESPONSIVE TWEAKS
+   ------------------------------ */
+@media (max-width: 640px) {
+    .tab-btn {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 0.875rem;
+    }
+    
+    .chat-message-user,
+    .chat-message-bot {
+        max-width: 90%;
+    }
+}
+/* Typing animation for chat */
+@keyframes bounce {
+    0%, 60%, 100% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-4px);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 1.2s infinite ease-in-out;
+}

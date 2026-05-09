@@ -1,0 +1,18 @@
+{
+  "phishing": {
+    "description": "Phishing ek attack hai jisme attacker fake website ya email se user ka data churaata hai.",
+    "types": ["email phishing", "clone phishing", "spear phishing"]
+  },
+  "sql injection": {
+    "description": "SQL Injection me attacker database queries manipulate karta hai.",
+    "types": ["error-based", "union-based", "blind"]
+  },
+  "xss": {
+    "description": "XSS attack me malicious scripts inject ki jati hain.",
+    "types": ["stored", "reflected", "dom-based"]
+  },
+  "brute force": {
+    "description": "Brute force attack me attacker passwords guess karta hai repeatedly.",
+    "types": ["dictionary attack", "credential stuffing"]
+  }
+}
